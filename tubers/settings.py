@@ -55,7 +55,6 @@ INSTALLED_APPS = [
     'hiretubers.apps.HiretubersConfig',
     'allinfo.apps.AllinfoConfig',
     'contacttubers.apps.ContacttubersConfig',
-    'whitenoise.runserver_nostatic'
 
 ]
 
@@ -109,7 +108,6 @@ JAZZMIN_UI_TWEAKS = {
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -215,5 +213,5 @@ SITE_ID = 1
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
