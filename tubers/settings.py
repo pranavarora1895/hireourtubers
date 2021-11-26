@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-v8^@c)l%obw$t_9+n7uu_9!-$$rghf_l#i8w0lku9w&(cpqz=0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 # DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = ['hireourtubers.herokuapp.com']
@@ -212,5 +212,5 @@ SITE_ID = 1
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
-# STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage' Works with paid Heroku plan
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
