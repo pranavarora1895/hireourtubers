@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pillow = "*"
+django = "*"
+psycopg2 = "*"
+djangocms-admin-style = "*"
+django-jazzmin = "*"
+django-ckeditor = "*"
+django-allauth = "*"
+django-mathfilters = "*"
+gunicorn = "*"
+whitenoise = "*"
+dj-database-url = "*"
+django-heroku = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

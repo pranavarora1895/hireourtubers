@@ -1,0 +1,70 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block content%}
+<div class="banner">
+    <img src="{% static './assets/images/bg-banner.png' %}" alt="" class="img-fluid w-100">
+    <h1 class="text-center">
+      Our Services
+    </h1>
+  </div>
+
+
+  <section class="container mt-3">
+    <h3 class="text-center">Our Services</h3>
+    <p class="pt-2 pb-3 text-center">YTubers that did extra ordinary last month</p>
+    <div class="team slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+
+        <div class="card text-white bg-success m-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Success card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+        <div class="card text-white bg-danger m-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Success card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        <div class="card text-white bg-info m-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Success card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        <div class="card text-white bg-warning m-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Success card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        <div class="card text-white bg-primary m-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Success card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+
+    </div>
+
+    <div class="controls d-flex justify-content-center mt-2 mb-2">
+      <div class="d-flex">
+        <i class="fa fa-angle-left youtuber-left"></i>
+        <i class="fa fa-angle-right youtuber-right"></i>
+      </div>
+    </div>
+  </section>
+
+
+
+
+</div>
+{%endblock%}

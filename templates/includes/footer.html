@@ -1,0 +1,50 @@
+<footer>
+    <div class="bg-accent mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 text-lg-left text-center">
+            <h4>
+              Reach out to hire YTubers
+            </h4>
+          </div>
+
+          <div class="col-sm-6 text-lg-right text-center">
+            <a href="{% url 'contact' %}">
+            <button class="btn btn-light">
+              Contact Us
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-lg-left text-center">
+          <h5>
+            &copy; 2021 YTubers for Hire
+          </h5>
+        </div>
+        <div class="col-md-4 text-lg-center text-center">
+          <h5>
+            All Rights Reserved. (<a href="{% url 'admin:index' %}">Admin?</a>)
+          </h5>
+        </div>
+        <div class="col-md-4 text-lg-right text-center">
+          <div>
+            {%for my in all_info%}
+            <a href="{{my.fb_link}}">
+            <button class="btn btn-accent"> <i class="fab fa-facebook-f fa-lg	"></i> </button></a>
+            <a href="{{my.insta_link}}">
+            <button class="btn btn-accent"> <i class="fab fa-instagram fa-lg	"></i> </button></a>
+            <a href="{{my.twitter_link}}">
+            <button class="btn btn-accent"> <i class="fab fa-twitter fa-lg	"></i> </button></a>
+            <a href="{{my.yt_link}}">
+            <button class="btn btn-accent"> <i class="fab fa-youtube fa-lg	"></i> </button></a>
+              {%endfor%}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
