@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'webpages.apps.WebpagesConfig',
     'youtubers.apps.YoutubersConfig',
@@ -56,6 +57,7 @@ INSTALLED_APPS = [
     'hiretubers.apps.HiretubersConfig',
     'allinfo.apps.AllinfoConfig',
     'contacttubers.apps.ContacttubersConfig',
+    'cloudinary',
 
 ]
 
@@ -213,4 +215,12 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage' Works with paid Heroku plan
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dv42xweaq',
+    'API_KEY': '226651226466412',
+    'API_SECRET': '3KE_mp3z-ec9jcPI1C-LTDyxPe4'
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
